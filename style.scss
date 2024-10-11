@@ -1,0 +1,167 @@
+@import "variables";
+@import "layout";
+@import "reset";
+@import "decorations";
+@import "animations";
+@import "media";
+
+body {
+  background-image: $gradient;
+}
+
+.navBar {
+  .logo {
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 2.4rem;
+
+    span {
+      color: $mainRed;
+    }
+  }
+  a {
+    color: white;
+  }
+}
+.navMenu {
+  li {
+    padding-left: 30px;
+  }
+}
+
+.topContent {
+  .title {
+    @include main300;
+    font-size: 4rem;
+    line-height: 4.8rem;
+    text-transform: uppercase;
+  }
+  .subTitle {
+    @include main400;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    text-transform: uppercase;
+    color: #e8ab36;
+  }
+  p {
+    @include main300;
+    max-width: 75%;
+    color: #efefef;
+    opacity: 70%;
+  }
+  .btn {
+    @include main500;
+    padding: 10px 20px;
+    border-radius: 75px;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 1.05rem;
+    background-color: #ffffff;
+    color: #000000;
+  }
+  .start {
+    background-color: $mainRed;
+    margin-right: 20px;
+    color: #efefef;
+  }
+}
+
+.midContent {
+  .overTitle {
+    @include main400;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    opacity: 50%;
+  }
+  .title {
+    @include main300;
+    font-family: $secFont;
+    font-size: 3.5rem;
+    line-height: 4rem;
+  }
+  .subTitle {
+    @include main400;
+    font-size: 1.25rem;
+  }
+  p {
+    @include main400;
+    opacity: 50.3%;
+  }
+  .start {
+    @include main500;
+    padding: 10px 20px;
+    border-radius: 75px;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 1.05rem;
+    background-color: $mainRed;
+    color: #efefef;
+  }
+}
+
+.bottomContent {
+  .overTitle {
+    @include main400;
+    letter-spacing: 3px;
+    text-align: center;
+    text-transform: uppercase;
+    opacity: 50%;
+  }
+  .title {
+    @include main300;
+    font-family: Barlow Condensed;
+    font-size: 3.5rem;
+    line-height: 4rem;
+    text-align: center;
+  }
+  p {
+    @include main400;
+    text-align: center;
+    opacity: 50.3%;
+  }
+  .text {
+    @include main300;
+    font-family: $secFont;
+    font-size: 1.5rem;
+    text-align: left;
+  }
+  .date {
+    @include main400;
+    text-align: left;
+    opacity: 50.3%;
+  }
+}
+
+footer .container {
+  .logo {
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 2.4rem;
+
+    span {
+      color: $mainRed;
+    }
+  }
+  span {
+    opacity: 50%;
+  }
+  ul {
+    @include main300;
+    letter-spacing: 3px;
+  }
+  .line {
+    border: 1px solid #ffffff;
+    opacity: 7.97%;
+    height: 1px;
+    margin-top: 25px;
+  }
+  .copyright {
+    @include main400;
+    text-align: left;
+    opacity: 50.3%;
+  }
+  .legal {
+    @include main400;
+    text-align: right;
+  }
+}

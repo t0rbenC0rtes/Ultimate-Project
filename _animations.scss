@@ -1,0 +1,41 @@
+@keyframes rotate3D {
+  0% {
+    transform: rotate3d(0, 0, 0, 0deg);
+  }
+  100% {
+    transform: rotate3d(1, 1, 1, 360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(-360deg);
+  }
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes zoomFixed {
+  0% {
+    transform: scale(1) rotate(28deg);
+  }
+  50% {
+    transform: scale(0) rotate(28deg);
+  }
+  100% {
+    transform: scale(1) rotate(28deg);
+  }
+}
